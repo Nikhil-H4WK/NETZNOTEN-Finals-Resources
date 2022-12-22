@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home {
+    background: url(../assets/sync_final1.jpg) no-repeat center center ;
+}
+
+header {
+    display: flex;
+    padding: 3rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo p {
+    color: white;
+    font-weight: 500;
+    font-style: unset;
+    font-size: 18px;
+}
+
+.logo p::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 6.9rem;
+    height: 2px;
+    background-color: white;
+}
+
+.nav {
+    width: 30rem;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.link {
+    text-decoration: none;
+    color: white;
+    font: 500 1rem/2rem "Montserrat", sans-serif;
+    transition: all 0.3s;
+    position: relative;
+}
+.link::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.nav ul li a button {
+    background-color: transparent;
+    border: white 2px solid;
+    border-radius: 20px;
+    color: white;
+    width: 10rem;
+    padding: 0.5rem;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.content {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 13rem 10rem 2rem 10rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    margin: 0 auto;
+    padding-bottom: 25rem;
+}
+
+.buttons button {
+    border: white 2px solid;
+    border-radius: 40px;
+    width: 9rem;
+    height: 2.5rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.buttons button:nth-child(2) {
+    background-color: transparent;
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 2rem 3rem;
+}
+
+.place {
+    width: 20rem;
+    margin: 0rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caption {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.dest {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.place img {
+    width: 18rem;
+    height: 16rem;
+    border-radius: 50%;
+}
+
+hr {
+    width: 8rem;
+    background-color: black;
+    height: 0.25rem;
+    margin-top: 1rem;
+}
+
+.values {
+    padding: 4rem 3rem;
+}
+
+.values__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem 0rem;
+}
+
+.value_card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 18rem;
+    padding: 2rem 1rem 1rem 1rem;
+    border-radius: 2rem;
+    width: 25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.value_card svg {
+    width: 7rem;
+    margin: 0 auto 2rem auto;
+    padding: 2rem;
+    background-color: #58595e52;
+    border-radius: 2rem;
+}
+
+.values__heading {
+    font-size: 2rem;
+}
+
+.typeof_value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.opacity_low {
+    width: 16rem;
+    margin: 0 auto;
+    opacity: 50%;
+}
+
+.populardest {
+    padding: 3rem 3rem;
+    background-color: rgb(228, 228, 228);
+}
+
+.faq {
+    padding: 4rem 3rem;
+}
+
+.accordion {
+    transition: 0.4s;
+    padding: 2rem;
+    background-color: #bebebe87;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+}
+
+.accordion__list {
+    width: 75%;
+    margin: 8rem auto 0 auto;
+}
+
+.accordion__list li {
+    list-style: none;
+}
+
+.accordion:hover {
+    cursor: pointer;
+}
+
+.accordion_question {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+.accordion_answer p {
+    opacity: 50%;
+    padding: 3rem 0rem;
+}
+
+.accordion_answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion label + input[type = "radio"] {
+    display: none;
+}
+
+.accordion label + input[type = "radio"]:checked + .accordion_answer {
+    max-height: 10rem;
+}
+
+.dod {
+    padding: 8rem 3rem;
+    background: url(../assets/pexels-aleksandar-pasaric-325185.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dod__timer {
+    margin: 1rem auto;
+    width: 45rem;
+}
+
+.timer__elements {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding-top: 6rem;
+} 
+
+.timer__element {
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+
+.timer__number {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 1.3rem 1rem;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.timer__text {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: #232931;
+    color: white;
+}
+
+.f_heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer__contents {
+    display: flex;
+    justify-content: space-around;
+    padding: 8rem;
+}
+
+.footer__contents > .footer_content:nth-child(3) > ul {
+    width: 13rem;
+}
+
+.footer__contents > .footer_content > ul > li {
+    margin: 0.5rem 0;
+}
+
+
+
+.footer__contents > .footer_content:nth-child(3) > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.f_svg {
+    width: 10%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.value_card:hover {
+    transform: scale(1.05);
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .link:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+} 
